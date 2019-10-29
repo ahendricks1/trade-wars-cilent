@@ -6,7 +6,7 @@ Now that your rose is in bloom
 A light hits the gloom on the grey
 There is so much a man can tell you, so much he can say
 You remain my power, my pleasure, my pain
-Baby, to me, you're like a growing addiction that I can't deny
+Baby, to me, you're like a growing toenail that I can't deny
 Won't you tell me, is that healthy, baby?
 But did you know that when it snows
 My eyes become large and the light that you shine can be seen?
