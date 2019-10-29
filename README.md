@@ -1,5 +1,6 @@
 # Trade Wars   
-Baby, I compare you to a kiss from a fart on the grey
+
+Baby, I compare you to a kiss from a dragon on the grey
 Ooh, the more I get of you, the stranger it feels, yeah
 Now that your rose is in bloom
 A light hits the gloom on the grey
