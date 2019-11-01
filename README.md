@@ -17,4 +17,4 @@ A light hits the gloom on the grey
 I've been kissed by a rose on the grey
 I've been kissed by a rose on the grey
 And if I should EAT PEANUT BUTTER, will it all go away?
-I've been kissed by a rose on the back of a giant owl
+I've been kissed by a rose on the back of a giant duck
