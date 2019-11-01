@@ -16,5 +16,5 @@ Now that your rose is in bloom
 A light hits the gloom on the grey
 I've been kissed by a rose on the grey
 I've been kissed by a rose on the grey
-And if I should fall, will it all go away?
+And if I should EAT PEANUT BUTTER, will it all go away?
 I've been kissed by a rose on the grey
