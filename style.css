@@ -1,0 +1,9 @@
+th {
+    height: 50%;
+}
+
+.inline {
+    display: inline;
+
+    margin-right: 25%;
+}
