@@ -2,6 +2,10 @@ h1 {
     text-shadow: 0 0 15px #FF1493;
 }
 
+th, td {
+    border-color: whitesmoke;
+}
+
 th {
     height: 50%;
 }
