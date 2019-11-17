@@ -20,7 +20,7 @@ th {
 }
 
 body {
-    background-image: url(images/starsbackground.jpg);
+    background-image: url(../static/starsbackground.jpg);
 }
 
 .username {
