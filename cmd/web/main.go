@@ -5,12 +5,11 @@ import (
 	"net/http"
 )
 
-
 func main() {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", home)
-	mux.HandleFunc("/snippet", showSnippet)
-	mux.HandleFunc("/snippet/create", createSnippet)
+	mux.HandleFunc("/", Home)
+	mux.HandleFunc("/snippet", ShowSnippet)
+	mux.HandleFunc("/snippet/create", CreateSnippet)
 	
 	http.Handle("/", http.FileServer(http.Dir("./static")))
 	http.ListenAndServe(":3000", nil)
