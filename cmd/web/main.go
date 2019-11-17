@@ -15,6 +15,12 @@ func home(w http.ResponseWriter, r *http.Request){
 }
 
 func players(w http.ResponseWriter, r *http.Request){
+	if r.Method != http.MethodGet && r.Method != http.MethodPost{
+		w.Header().Set("Allow", http.MethodGet)
+		w.Header().Set("Allow", http.MethodPost)
+		http.Error(w, "Method Not Allowed", 405)
+		return
+	}
 	w.Write([]byte("Display a player snippet."))
 }
 
