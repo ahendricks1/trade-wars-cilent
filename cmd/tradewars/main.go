@@ -14,6 +14,10 @@ func home(w http.ResponseWriter, r *http.Request){
 	w.Write([]byte("This is a test run!"))
 }
 
+func players(w http.ResponseWriter, r *http.Request){
+	w.Write([]byte("Display a player snippet."))
+}
+
 func showSnippet(w http.ResponseWriter, r *http.Request){
 	w.Write([]byte("Display a specific snippet..."))
 }
