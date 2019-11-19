@@ -51,11 +51,11 @@ func players(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Display a player snippet."))
 }
 
-func ShowSnippet(w http.ResponseWriter, r *http.Request) {
+func showSnippet(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Display a specific snippet..."))
 }
 
-func CreateSnippet(w http.ResponseWriter, r *http.Request) {
+func createSnippet(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		w.Header().Set("Allow", http.MethodPost)
 		w.WriteHeader(405)
