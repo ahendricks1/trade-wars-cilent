@@ -1,4 +1,4 @@
-
+{{define "base"}}
 <!doctype html>
 <html lang='en'>
     <head>
@@ -6,8 +6,6 @@
         <title>{{template "title" .}} - Snippetbox</title>
     </head>
     <body>
-    {{define "base"}}
-    {{template "footer" .}}
         <header>
             <h1><a href='/'>Snippetbox</a></h1>
         </header>
@@ -17,6 +15,8 @@
         <main>
             {{template "main" .}}
         </main>
-        {{end}}
+        <!-- Invoke the footer template -->
+        {{template "footer" .}}
     </body>
 </html>
+{{end}}
