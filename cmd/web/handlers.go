@@ -2,8 +2,8 @@ package main
 
 import (
 	//"fmt"
-	"html/template" // New import
-	"log"           // New import
+	"html/template" // functions that allow us to use templates
+	"log"           
 	"net/http"
 	//"strconv"
 )
