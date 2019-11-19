@@ -8,9 +8,9 @@ import (
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
-	
-	http.Handle("/", http.FileServer(http.Dir("./static")))
-	
+
+	http.Handle("/", http.FileServer(http.Dir("./ui/static")))
+
 	log.Println("Starting server on :4000")
 	err := http.ListenAndServe(":4000", mux)
 	log.Fatal(err)
