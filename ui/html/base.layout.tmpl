@@ -1,19 +1,14 @@
 {{define "base"}}
-<!doctype html>
+<!DOCTYPE html>
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <title>{{template "title" .}} - Snippetbox</title>
+        <title>{{template "title" .}} - Trade Wars</title>
     </head>
     <body>
-        <header>
-            <h1><a href='/'>Snippetbox</a></h1>
-        </header>
-        <nav>
-            <a href='/'>Home</a>
-        </nav>
+        <link rel='stylesheet' href='/static/css/style.css'>
         <main>
-            {{template "main" .}}
+            {{template "main"}}
         </main>
     </body>
 </html>

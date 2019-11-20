@@ -1,8 +1,8 @@
 package main
 
 import (
-    "html/template" // New import
-    "log"           // New import
+    "html/template"
+    "log"           
     "net/http"
 )
 
@@ -14,7 +14,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 
     files := []string{
         "./ui/html/home.page.tmpl",
-        
+        "./ui/html/base.layout.tmpl",
     }
 
     // Use the template.ParseFiles() function to read the template file into a
