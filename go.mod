@@ -1,4 +1,4 @@
-module github.com/ahendricks1/web
+module github.com/ahendricks1/cmd/web
 
 go 1.13
 
