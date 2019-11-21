@@ -1,4 +1,4 @@
-module github.com/ahendricks1/cmd/web
+module github.com/ahendricks1/trade-wars-cilent
 
 go 1.13
 
