@@ -38,6 +38,31 @@ func home(w http.ResponseWriter, r *http.Request) {
     }
 }
 
+func grid(w http.ResponseWriter, r *http.Request) {
+    if r.URL.Path != "/grid" {
+        http.NotFound(w, r)
+        return
+    }
+
+    grid_files := []string{
+        "./ui/html/grid.page.tmpl",
+        "./ui/html/base.layout.tmpl",
+    }
+
+    ts, err := template.ParseFiles(grid_files...)
+    if err != nil {
+        log.Println(err.Error())
+        http.Error(w, "Internal Server Error", 500)
+        return
+    }
+
+    err = ts.Execute(w, nil)
+    if err != nil {
+        log.Println(err.Error())
+        http.Error(w, "Internal Server Error", 500)
+    }
+}
+
 func players(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet && r.Method != http.MethodPost {
 		w.Header().Set("Allow", http.MethodGet)
