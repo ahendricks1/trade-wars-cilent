@@ -12,10 +12,9 @@ func main() {
 	mux.HandleFunc("/grid", grid)
 
 	PORT := os.Getenv("PORT")
-	
-	fileServer := http.FileServer(http.Dir("./ui/static/"))	
-	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
+	fileServer := http.FileServer(http.Dir("./ui/static/"))
+	mux.Handle("/static/", http.StripPrefix("/static", fileServer))
 
 	log.Println("Starting server...")
 	err := http.ListenAndServe(":"+PORT, mux)

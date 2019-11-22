@@ -26,3 +26,15 @@ body {
 .username {
     font-size: 200%;
 }
+
+.cargo {
+    text-align: center;
+    float: right;
+    width: 30px;
+    color: black;
+}
+
+/* .smaller_text {
+    color: FF1493;
+    text-shadow: none;
+} */
