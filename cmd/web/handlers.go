@@ -63,14 +63,28 @@ func grid(w http.ResponseWriter, r *http.Request) {
     }
 }
 
-func players(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodGet && r.Method != http.MethodPost {
-		w.Header().Set("Allow", http.MethodGet)
-		w.Header().Set("Allow", http.MethodPost)
-		http.Error(w, "Method Not Allowed", 405)
-		return
+// func players(w http.ResponseWriter, r *http.Request) {
+// 	if r.Method != http.MethodGet && r.Method != http.MethodPost {
+// 		w.Header().Set("Allow", http.MethodGet)
+// 		w.Header().Set("Allow", http.MethodPost)
+// 		http.Error(w, "Method Not Allowed", 405)
+// 		return
+// 	}
+// 	w.Write([]byte("Display a player snippet."))
+// }
+
+func playersHandler(w http.ResponseWriter, r *http.Request) {
+    if r.Method == http.MethodGet{
+        
+
+    }else if r.Method == http.MethodPost {
+        err := r.ParseForm()
+        if err != nil{
+            log.Println(err.Error())
+            http.Error(w, "Internal Server Error", 500)
+        }
 	}
-	w.Write([]byte("Display a player snippet."))
+	callsign := r.Form.Get("callsign")
 }
 
 func ShowSnippet(w http.ResponseWriter, r *http.Request) {
