@@ -10,15 +10,14 @@
 
 <body>
     <link href='/static/css/style.css' rel="stylesheet" type="text/css">
-    <form action="/players" method="post" type="text" name="callsign">
     <h1 style="text-align: center; font-size: 70px;">Trade Wars</h1>
     <p><center><img src="/static/img/parrot.png" alt="parrot"></center></p>
     <p class="username" style="text-align: center;">Name</p>
-
+    <form action="/players" method="post" type="text" name="callsign">
     <div style="text-align: center;">
         <input class="textbox" type="text-center" name="callsign"><br>
         <button type="submit;" style="text-align: center;" onclick="window.location.href = '/grid' ; ">Launch</button>
-        <input type="submit" value="playersHandler">
+        <input type="submit" value="Submit">
     </div>
     </form>
 </body>
