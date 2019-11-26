@@ -39,9 +39,19 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func grid(w http.ResponseWriter, r *http.Request) {
+    var cookie, err = r.Cookie("callsign")
     if r.URL.Path != "/grid" {
         http.NotFound(w, r)
         return
+    }
+
+    callsign := cookie.Value
+    log.Println(callsign)
+
+    data := struct {
+        Callsign string
+    }{
+        Callsign: "Welcome "+callsign+"!",
     }
 
     grid_files := []string{
@@ -56,7 +66,7 @@ func grid(w http.ResponseWriter, r *http.Request) {
         return
     }
 
-    err = ts.Execute(w, nil)
+    err = ts.Execute(w, data)
     if err != nil {
         log.Println(err.Error())
         http.Error(w, "Internal Server Error", 500)
@@ -74,17 +84,21 @@ func grid(w http.ResponseWriter, r *http.Request) {
 // }
 
 func playersHandler(w http.ResponseWriter, r *http.Request) {
-    if r.Method == http.MethodGet{
-        
-
-    }else if r.Method == http.MethodPost {
+    if r.Method == http.MethodPost {
         err := r.ParseForm()
         if err != nil{
             log.Println(err.Error())
             http.Error(w, "Internal Server Error", 500)
         }
-	}
-	callsign := r.Form.Get("callsign")
+        callsign := r.Form.Get("callsign")
+        cookie := http.Cookie {
+            Name: "callsign",
+            Value: callsign,
+            Path: "/",
+        }
+        http.SetCookie(w, &cookie)
+        http.Redirect(w, r, "/grid", http.StatusSeeOther)
+    }
 }
 
 func ShowSnippet(w http.ResponseWriter, r *http.Request) {
