@@ -10,13 +10,14 @@
 
 <body>
     <link href='/static/css/style.css' rel="stylesheet" type="text/css">
-    
+    <form action="/players" method="post">
     <h1 style="text-align: center; font-size: 70px;">Trade Wars</h1>
-    <p><center><img src="/static/img/parrot.png" alt="Neon flamingo in a santa hat"></center></p>
+    <p><center><img src="/static/img/parrot.png" alt="parrot"></center></p>
     <p class="username" style="text-align: center;">Name</p>
 
     <div style="text-align: center;">
         <input class="textbox" type="text-center" name="fname"><br>
-        <button style="text-align: center;" onclick="window.location.href = '/grid' ; ">Launch</button>
+        <button type="submit;" style="text-align: center;" onclick="window.location.href = '/grid' ; ">Launch</button>
     </div>
+    </form>
 </body>

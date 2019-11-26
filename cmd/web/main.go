@@ -4,12 +4,16 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"github.com/joho/godotenv"
 )
 
 func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/grid", grid)
+	mux.HandleFunc("/players", playersHandler)
+
+	godotenv.Load()
 
 	PORT := os.Getenv("PORT")
 
