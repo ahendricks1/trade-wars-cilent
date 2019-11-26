@@ -63,7 +63,7 @@ func grid(w http.ResponseWriter, r *http.Request) {
     }
 }
 
-func players(w http.ResponseWriter, r *http.Request) {
+func playersHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet && r.Method != http.MethodPost {
 		w.Header().Set("Allow", http.MethodGet)
 		w.Header().Set("Allow", http.MethodPost)

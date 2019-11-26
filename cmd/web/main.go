@@ -10,6 +10,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/grid", grid)
+	mux.HandleFunc("/players", playersHandler)
 
 	PORT := os.Getenv("PORT")
 
