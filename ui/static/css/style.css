@@ -5,15 +5,12 @@ body {
     text-shadow: 2px 2px 2px #FF1493, 0 0 25px #FF1493, 0 0 5px #FF1493;
 }
 
-th, td, tr {
+td, tr {
     border-color: whitesmoke;
-    height: 70px;
-    width: 200px;
+    height: 20%;
+    width: 20%;
 }
 
-/* th {
-    height: 50%;
-} */
 
 .inline {
     display: inline;
