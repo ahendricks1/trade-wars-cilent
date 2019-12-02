@@ -10,15 +10,24 @@
 <html>
 <head>
 <style>
-table, th{
-  border: 1px solid black;
-  height: 27px;
+table,{
+  border: 1px solid whitesmoke;
+}
+
+th {
+  border: 1px solid whitesmoke;
+  width: 100px;
+  height: 5px;
+}
+
+tr {
+
 }
 
 </style>
 </head>
 <body>
-<link href='/static/css/style.css' rel="stylesheet" type="text/css">
+<link href='/static/css/style.css' rel="stylesheet" type='text/css'>
 
 <div>
   <h1 class="inline">Trade Wars!</h1><p class="inline" style="color: black;">{{.Callsign}}</p>
@@ -33,11 +42,11 @@ table, th{
 </div>
 </div>
 <div>
-<table align="left" float="left;" style="width:15%;">
+<table align="left" float="left;">
   <tr>
-    <th><img src="/static/img/spaceship.png" alt="spaceship" style="width:100px;height:100px;"></th>
-    <th><br></th> 
-    <th><br></th>
+    <th><img src="/static/img/spaceship.png" alt="spaceship" style="width:65px;height:65px;"></th>
+    <th> <br></th> 
+    <th> <br></th>
     <th><br></th>
     <th><br></th>
     <th><br></th>
@@ -154,6 +163,7 @@ table, th{
     <th><br></th>
   </tr>
 </table>
+</div>
 </div>
 
 </p>

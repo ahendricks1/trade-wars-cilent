@@ -14,7 +14,6 @@ func main() {
 	mux.HandleFunc("/players", playersHandler)
 
 	godotenv.Load()
-
 	PORT := os.Getenv("PORT")
 
 	fileServer := http.FileServer(http.Dir("./ui/static/"))
