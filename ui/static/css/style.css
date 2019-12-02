@@ -5,8 +5,14 @@ body {
     text-shadow: 2px 2px 2px #FF1493, 0 0 25px #FF1493, 0 0 5px #FF1493;
 }
 
-table, th{
+table{
     border: 1px solid whitesmoke;
+  }
+  
+th {
+    border: 1px solid whitesmoke;
+    width: 100px;
+    height: 65px;
   }
 
 td {
