@@ -8,13 +8,17 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-
-</style>
-</head>
 <body>
+
 <link href='/static/css/style.css' rel="stylesheet" type='text/css'>
+<script src="/static/js/style.js">
+
+</script>
+<button type="button" onclick="goDirection(this)" id="left">Left</button>
+<button type="button" onclick="goDirection(this)" id="up">Up</button>
+<button type="button" onclick="goDirection(this)" id="down">Down</button>
+<button type="button" onclick="goDirection(this)" id="right">Right</button>
+<p id="demo"></p>
 
 <div>
   <h1 class="inline">Trade Wars!</h1><p class="inline" style="color: black;">{{.Callsign}}</p>
@@ -28,10 +32,11 @@
 <p>Raz'lak: 2 bottles</p>
 </div>
 </div>
+
 <div>
 <table align="left" float="left;">
   <tr>
-    <th><img src="/static/img/spaceship.png" alt="spaceship" style="width:65px;height:65px;"></th>
+    <th><img src="/static/img/spaceship.png" alt="spaceship" align="center" style="width:65px;height:65px;"></th>
     <th> <br></th> 
     <th> <br></th>
     <th><br></th>
@@ -90,6 +95,7 @@
     <th><br></th>
     <th><br></th>
   </tr>
+  <tr>
     <th><br></th>
     <th><br></th> 
     <th><br></th>
@@ -151,7 +157,7 @@
   </tr>
 </table>
 </div>
-</div>
+</div>  
 
 </p>
 </body>
