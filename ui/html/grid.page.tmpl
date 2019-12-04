@@ -12,13 +12,7 @@
 
 <link href='/static/css/style.css' rel="stylesheet" type='text/css'>
 <script src="/static/js/style.js">
-
 </script>
-<button type="button" onclick="goDirection(this)" id="left">Left</button>
-<button type="button" onclick="goDirection(this)" id="up">Up</button>
-<button type="button" onclick="goDirection(this)" id="down">Down</button>
-<button type="button" onclick="goDirection(this)" id="right">Right</button>
-<p id="demo"></p>
 
 <div>
   <h1 class="inline">Trade Wars!</h1><p class="inline" style="color: black;">{{.Callsign}}</p>
@@ -158,6 +152,19 @@
 </table>
 </div>
 </div>  
+
+<div class="directions">
+<p>
+<button type="button" class="button" onclick="goDirection(this)" id="up">Up</button>
+</p><p>
+<button type="button" class="button" onclick="goDirection(this)" id="right">Right</button>
+</p><p>
+<button type="button" class="button" onclick="goDirection(this)" id="left">Left</button>
+</p><p>
+<button type="button" class="button" onclick="goDirection(this)" id="down">Down</button>
+</p>
+<p id="demo"></p>
+</div>
 
 </p>
 </body>
