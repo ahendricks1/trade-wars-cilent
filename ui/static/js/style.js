@@ -49,13 +49,13 @@ function goDirection(button){
 		}
 	}
 	function moveLeft(){
-		objImage.style.left=parseInt(objImage.style.left)-5 +'vw';
+		objImage.style.left=parseInt(objImage.style.left)-7.8 +'vw';
 	}
 	function moveUp(){
 		objImage.style.top=parseInt(objImage.style.top)-5 +'vw';
 	}
 	function moveRight(){
-		objImage.style.left=parseInt(objImage.style.left)+5 +'vw';
+		objImage.style.left=parseInt(objImage.style.left)+7.8 +'vw';
 	}
 	function moveDown(){
 		objImage.style.top=parseInt(objImage.style.top)+5 +'vw';
