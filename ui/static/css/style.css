@@ -46,7 +46,7 @@ body {
     float: right;
 }
 
-.button{
+.button {
     background-color: rgba(0, 0, 0, 0);
     border: 1px;
     font-family: 'Pacifico', cursive;
@@ -60,4 +60,8 @@ body {
     
     margin-right: 80px;
     cursor: pointer;
+}
+
+#demo {
+    font-size: 28px;
 }
